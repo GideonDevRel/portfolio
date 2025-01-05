@@ -198,7 +198,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6">Let's Work Together</h2>
           <p className="text-lg text-muted-foreground mb-8">
             Whether you need a security audit, smart contract development, or blockchain consultation,
-            I'm here to help secure your Web3 project.
+            I&apos;m here to help secure your Web3 project.
           </p>
           <Button asChild size="lg">
             <Link href="/contact" className="group">
