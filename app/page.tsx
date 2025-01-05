@@ -7,7 +7,7 @@ export default function Home() {
       <section className="py-20 text-center">
         <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          I'I&apos;m a full-stack developer passionate about creating exceptional digital experiences
+          I&apos;m a full-stack developer passionate about creating exceptional digital experiences
         </p>
         <div className="flex gap-4 justify-center">
           <Button asChild>
