@@ -1,13 +1,14 @@
 export default function AboutLayout({
-    children,
-  }: {
-    children: React.ReactNode;
-  }) {
-    return (
-      <div>
-        <h2 className="text-2xl font-semibold text-center mb-8">About</h2>
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <div className="container mx-auto px-4">
+      <div className="max-w-4xl mx-auto">
         {children}
       </div>
-    );
-  }
-  
+    </div>
+  )
+}
+

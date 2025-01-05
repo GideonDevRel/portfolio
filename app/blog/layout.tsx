@@ -5,7 +5,7 @@ export default function BlogLayout({
   }) {
     return (
       <div>
-        <h2 className="text-2xl font-semibold text-center mb-8">Blog</h2>
+        <h2 className="text-2xl font-semibold text-center mb-8">My TEchnical Blogs</h2>
         {children}
       </div>
     );

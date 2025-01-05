@@ -5,7 +5,7 @@ export default function ContactLayout({
   }) {
     return (
       <div>
-        <h2 className="text-2xl font-semibold text-center mb-8">Contact</h2>
+        <h2 className="text-2xl font-semibold text-center mb-8">Contact Me</h2>
         {children}
       </div>
     );
