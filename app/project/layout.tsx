@@ -1,13 +1,14 @@
-export default function ProjectsLayout({
-    children,
-  }: {
-    children: React.ReactNode;
-  }) {
-    return (
-      <div>
-        <h2 className="text-2xl font-semibold text-center mb-8">My Projects</h2>
+export default function ProjectLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <div className="container mx-auto px-4">
+      <div className="max-w-6xl mx-auto">
         {children}
       </div>
-    );
-  }
-  
+    </div>
+  )
+}
+
