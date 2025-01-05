@@ -10,7 +10,7 @@ export default function About() {
           <Card>
             <CardContent className="pt-6">
               <p className="text-lg leading-relaxed">
-                I'm a passionate developer with experience in building modern web applications.
+              I&apos;m a passionate developer with experience in building modern web applications.
                 I specialize in React, Next.js, and TypeScript, focusing on creating performant
                 and user-friendly experiences.
               </p>
