@@ -1,11 +1,29 @@
-export default function ContactPage() {
-    return (
-      <section className="container mx-auto py-16">
-        <h1 className="text-4xl font-bold">Contact</h1>
-        <p className="mt-4 text-gray-700">
-          Feel free to reach out via email or social media for collaborations or queries.
-        </p>
-      </section>
-    );
-  }
-  
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+
+export default function Contact() {
+  return (
+    <div className="py-16">
+      <h1 className="text-4xl font-bold mb-8">Get in Touch</h1>
+      <Card>
+        <CardHeader>
+          <CardTitle>Send a Message</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <form className="grid gap-4">
+            <Input placeholder="Your Name" />
+            <Input type="email" placeholder="Your Email" />
+            <Textarea 
+              placeholder="Your Message" 
+              className="min-h-[150px]" 
+            />
+            <Button type="submit">Send Message</Button>
+          </form>
+        </CardContent>
+      </Card>
+    </div>
+  )
+}
+
