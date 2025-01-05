@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/app/components/ui/card"
 
 export default function About() {
   return (

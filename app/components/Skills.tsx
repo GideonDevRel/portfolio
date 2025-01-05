@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/app/components/ui/badge"
 
 const skills: string[] = ["TypeScript", "React", "Next.js", "Node.js", "CSS", "HTML", "Git"]
 
