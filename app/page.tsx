@@ -195,7 +195,7 @@ export default function Home() {
       {/* Contact Preview Section */}
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-2xl text-center">
-          <h2 className="text-3xl font-bold mb-6">Let's Work Together</h2>
+          <h2 className="text-3xl font-bold mb-6">Let&apos;s Work Together</h2>
           <p className="text-lg text-muted-foreground mb-8">
             Whether you need a security audit, smart contract development, or blockchain consultation,
             I&apos;m here to help secure your Web3 project.
