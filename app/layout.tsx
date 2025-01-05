@@ -9,7 +9,7 @@ import Image from 'next/image'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Blockchain Portfolio',
+  title: 'GideonDevRel',
   description: 'Portfolio of a Blockchain Developer, Auditor, and Researcher',
   icons: {
     icon: '/logo.svg',
