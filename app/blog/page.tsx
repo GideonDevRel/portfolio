@@ -1,35 +1,32 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/app/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
-
-const posts = [
-  {
-    title: "Building with Next.js App Router",
-    excerpt: "Learn how to leverage the power of Next.js App Router for better performance and developer experience.",
-    date: "2024-01-05",
-  },
-  {
-    title: "Mastering TypeScript",
-    excerpt: "Essential TypeScript patterns and practices for writing better, type-safe code.",
-    date: "2024-01-03",
-  },
-]
+import { ArrowRight } from 'lucide-react'
+import { blogs } from "@/utils/data"
 
 export default function Blog() {
   return (
     <div className="py-16">
       <h1 className="text-4xl font-bold mb-8">Blog</h1>
       <div className="grid gap-6">
-        {posts.map((post, index) => (
-          <Card key={index}>
+        {blogs.map((post, index) => (
+          <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
             <CardHeader>
               <CardTitle>{post.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground mb-4">{post.excerpt}</p>
+              <p className="text-muted-foreground mb-4">{post.description}</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {post.tags.map((tag, i) => (
+                  <Badge key={i} variant="outline">
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
               <div className="flex justify-between items-center">
-                <span className="text-sm text-muted-foreground">{post.date}</span>
-                <Link href="#" className="text-sm text-primary hover:underline">
-                  Read More →
+                <span className="text-sm text-muted-foreground">{post.datePublished}</span>
+                <Link href={post.link} className="text-primary hover:underline inline-flex items-center">
+                  Read More <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
             </CardContent>
