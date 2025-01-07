@@ -387,7 +387,7 @@ export default function Home() {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Let's Connect</h2>
+          <h2 className="text-3xl font-bold mb-6">Let&apos;s Connect</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
             Schedule a call to discuss your blockchain security needs, smart contract audit requirements, 
             or any other blockchain-related inquiries.
