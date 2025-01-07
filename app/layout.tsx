@@ -7,8 +7,8 @@ import { AnimatedHeader, AnimatedMain, AnimatedFooter } from '@/app/components/a
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Gideon Maoga - Blockchain Developer',
-  description: 'Portfolio of Gideon Maoga, Blockchain Developer, Auditor, and Researcher',
+  title: 'Blockchain Developer Portfolio',
+  description: 'Portfolio of a Blockchain Developer, Auditor, and Researcher',
   icons: {
     icon: '/logo.svg',
   },

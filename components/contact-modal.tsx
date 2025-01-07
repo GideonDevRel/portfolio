@@ -32,12 +32,12 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div 
         className="absolute inset-0 bg-background/80 backdrop-blur-sm"
         onClick={onClose}
       />
-      <Card className="relative z-10 w-full max-w-lg animate-in fade-in zoom-in duration-300">
+      <Card className="relative z-10 w-full max-w-lg mx-auto animate-in fade-in zoom-in duration-300">
         <CardHeader className="flex flex-row items-center justify-between">
           <CardTitle>Get in Touch</CardTitle>
           <Button variant="ghost" size="icon" onClick={onClose}>
