@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from "@/components/theme-provider"
@@ -29,7 +30,10 @@ export default function RootLayout({
         >
           <div className="min-h-screen bg-background transition-colors duration-1000">
             <AnimatedHeader />
-            <AnimatedMain>{children}</AnimatedMain>
+            <AnimatedMain>
+            {children}
+            <SpeedInsights />
+            </AnimatedMain>
             <AnimatedFooter />
           </div>
         </ThemeProvider>
