@@ -5,13 +5,13 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from 'lucide-react'
 import Link from 'next/link'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { ModeToggle } from "@/components/mode-toggle"
 
 export function MobileNav() {
   const [open, setOpen] = useState(false)
 
-  const links = ['Home', 'About', 'Projects', 'Blog', 'Events', 'Contact']
+  const links = ['About', 'Projects', 'Events', 'Contact']
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
